@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0f;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #0b0b0f !important;
+  border-bottom: 1px solid #22222b;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: #a1a1aa !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Hero */
+#home {
+  background:
+    radial-gradient(circle at 80% 20%, #30205f 0%, transparent 35%),
+    #0b0b0f !important;
+  overflow: hidden;
+}
+
+#home h1 {
+  color: #ffffff;
+}
+
+#home .text-primary {
+  color: #a78bfa !important;
+}
+
+#home .text-secondary {
+  color: #a1a1aa !important;
+}
+
+/* Services */
+#services {
+  background: #111116 !important;
+}
+
+#services h2,
+#services h4 {
+  color: #ffffff;
+}
+
+#services .text-secondary {
+  color: #a1a1aa !important;
+}
+
+.card {
+  background: #18181f !important;
+  color: #ffffff;
+  border: 1px solid #292934 !important;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #8b5cf6 !important;
+}
+
+/* Portfolio */
+#portfolio {
+  background: #0b0b0f;
+}
+
+#portfolio h2 {
+  color: #ffffff;
+}
+
+#portfolio .text-secondary {
+  color: #a1a1aa !important;
+}
+
+.portfolio-card {
+  height: 350px;
+  cursor: pointer;
+  border: 1px solid #292934;
+}
+
+.portfolio-card img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+
+.portfolio-overlay {
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.95)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+/* Contact */
+#contact {
+  background: #111116 !important;
+}
+
+#contact h2 {
+  color: #ffffff;
+}
+
+#contact .text-secondary {
+  color: #a1a1aa !important;
+}
+
+#contact .bg-white {
+  background: #18181f !important;
+  border: 1px solid #292934;
+}
+
+.form-label {
+  color: #ffffff;
+}
+
+.form-control {
+  background: #0b0b0f;
+  border: 1px solid #363642;
+  color: #ffffff;
+}
+
+.form-control::placeholder {
+  color: #71717a;
+}
+
+.form-control:focus {
+  background: #0b0b0f;
+  color: #ffffff;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.15);
+}
+
+/* Buttons */
+.btn-dark {
+  background: #ffffff !important;
+  color: #0b0b0f !important;
+  border: none !important;
+}
+
+.btn-dark:hover {
+  background: #a78bfa !important;
+  color: #ffffff !important;
+}
+
+.btn-outline-dark {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.btn-outline-dark:hover {
+  background: #ffffff !important;
+  color: #0b0b0f !important;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: #050507 !important;
+}
+
+footer .text-secondary {
+  color: #71717a !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 42px;
+  }
+
+  .portfolio-card {
+    height: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  #home h1 {
+    font-size: 36px;
+  }
+
+  #home {
+    text-align: center;
+  }
+}
+.footer-link {
+  color: #a1a1aa;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #a78bfa;
+  transform: translateX(4px);
+}
+
+footer .text-primary {
+  color: #a78bfa !important;
+}
+/* Contact */
+#contact {
+  background: #111116;
+}
+
+.contact-box {
+  background: #18181f;
+  border: 1px solid #292934;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.contact-box:hover {
+  border-color: #8b5cf6;
+}
+
+#contact .text-primary {
+  color: #a78bfa !important;
+}
+
+#contact .text-secondary {
+  color: #a1a1aa !important;
+}
+
+#contact h2,
+#contact h6 {
+  color: #ffffff;
+}
+
+#contact .form-label {
+  color: #ffffff;
+}
+
+#contact .form-control {
+  background: #0b0b0f;
+  border: 1px solid #363642;
+  color: #ffffff;
+}
+
+#contact .form-control::placeholder {
+  color: #71717a;
+}
+
+#contact .form-control:focus {
+  background: #0b0b0f;
+  color: #ffffff;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.15);
+}
